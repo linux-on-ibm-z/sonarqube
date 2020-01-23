@@ -10,6 +10,7 @@ configureTravis() {
   mkdir -p ~/.local
   curl -sSL https://github.com/SonarSource/travis-utils/tarball/v55 | tar zx --strip-components 1 -C ~/.local
   source ~/.local/bin/install
+  echo "hi 1"
 }
 configureTravis
 
