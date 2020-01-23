@@ -5,9 +5,6 @@ jdk: openjdk11
 script: ./travis.sh
 dist: trusty
 
-branches:
-  only:
-  - s390x-travis
 
 env:
   - TARGET=BUILD
