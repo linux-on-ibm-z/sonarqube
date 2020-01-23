@@ -6,9 +6,8 @@ script: ./travis.sh
 dist: trusty
 
 branches:
-  except:
-  - /^dogfood\/.*$/
-  - public_master
+  only:
+  - s390x-travis
 
 env:
   - TARGET=BUILD
