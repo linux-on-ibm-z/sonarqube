@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-./.travis/setup_ramdisk.sh
+#./.travis/setup_ramdisk.sh
 
 #
 # Configure Maven settings and install some script utilities
