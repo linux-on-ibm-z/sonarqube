@@ -10,8 +10,8 @@ arch:
   - s390x
 
 env:
-  - TARGET=BUILD
-  - TARGET=WEB_TESTS
+  - TARGET=BUILD GITHUB_TOKEN=[secure] SONAR_HOST_URL=https://sonarcloud.io SONAR_TOKEN=[secure] ARTIFACTORY_URL=https://repox.jfrog.io/repox
+  - TARGET=WEB_TESTS GITHUB_TOKEN=[secure] SONAR_HOST_URL=https://sonarcloud.io SONAR_TOKEN=[secure] ARTIFACTORY_URL=https://repox.jfrog.io/repox
 
 matrix:
   fast_finish: true
