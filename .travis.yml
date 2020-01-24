@@ -5,6 +5,11 @@ jdk: openjdk11
 script: ./travis.sh
 dist: trusty
 
+addons:
+  apt:
+    packages:
+    - maven
+    
 arch:
   - amd64
   - s390x
