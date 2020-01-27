@@ -15,8 +15,8 @@ arch:
   - s390x
 
 env:
-  - TARGET=BUILD GITHUB_TOKEN=[secure] export TRAVIS_UTILS_HOME=$HOME/.local SONAR_HOST_URL=https://sonarcloud.io SONAR_TOKEN=[secure] ARTIFACTORY_URL=https://repox.jfrog.io/repox
-  - TARGET=WEB_TESTS GITHUB_TOKEN=[secure] export TRAVIS_UTILS_HOME=$HOME/.local SONAR_HOST_URL=https://sonarcloud.io SONAR_TOKEN=[secure] ARTIFACTORY_URL=https://repox.jfrog.io/repox
+  - TARGET=BUILD GITHUB_TOKEN=[secure] TRAVIS_UTILS_HOME=$HOME/.local SONAR_HOST_URL=https://sonarcloud.io SONAR_TOKEN=[secure] ARTIFACTORY_URL=https://repox.jfrog.io/repox
+  - TARGET=WEB_TESTS GITHUB_TOKEN=[secure] TRAVIS_UTILS_HOME=$HOME/.local SONAR_HOST_URL=https://sonarcloud.io SONAR_TOKEN=[secure] ARTIFACTORY_URL=https://repox.jfrog.io/repox
 
 matrix:
   fast_finish: true
