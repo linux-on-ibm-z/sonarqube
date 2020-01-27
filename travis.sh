@@ -11,7 +11,7 @@ echo "hi 12"
   mkdir -p ~/.local
   curl -sSL https://github.com/SonarSource/travis-utils/tarball/v55 | tar zx --strip-components 1 -C ~/.local
   echo "hi 123"
-  source ~/.local/bin/install
+  sudo source ~/.local/bin/install
   echo "hi 1"
 }
 configureTravis
