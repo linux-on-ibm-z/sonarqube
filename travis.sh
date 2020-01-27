@@ -12,6 +12,8 @@ echo "hi 12"
   curl -sSL https://github.com/SonarSource/travis-utils/tarball/v55 | tar zx --strip-components 1 -C ~/.local
   echo "hi 123"
   ls -la $HOME/.local/m2
+  echo "hi5643"
+  ls -la $HOME
   source ~/.local/bin/install
   echo "hi 1"
 }
