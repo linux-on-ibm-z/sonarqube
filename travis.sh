@@ -7,6 +7,7 @@ set -euo pipefail
 # Configure Maven settings and install some script utilities
 #
 configureTravis() {
+echo "hi 1"
   mkdir -p ~/.local
   curl -sSL https://github.com/SonarSource/travis-utils/tarball/v55 | tar zx --strip-components 1 -C ~/.local
   source ~/.local/bin/install
