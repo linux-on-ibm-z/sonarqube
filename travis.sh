@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ./.travis/setup_ramdisk.sh
-
+mvn -version
 #
 # Configure Maven settings and install some script utilities
 #
