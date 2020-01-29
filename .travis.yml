@@ -9,6 +9,7 @@ addons:
   apt:
     packages:
     - maven
+    - jq
     
 arch:
   - amd64
