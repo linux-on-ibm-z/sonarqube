@@ -11,18 +11,13 @@ addons:
     - maven
     - jq
     
-#arch:
- # - amd64
-  #- s390x
-  
-matrix:
-  include:
-   - arch: s390x
-     jdk: openjdk11
+arch:
+  - amd64
+  - s390x
      
 env:
-  - TARGET=BUILD #GITHUB_TOKEN=[secure] TRAVIS_UTILS_HOME=$HOME/.local SONAR_HOST_URL=https://sonarcloud.io SONAR_TOKEN=[secure] ARTIFACTORY_URL=https://repox.jfrog.io/repox
-  - TARGET=WEB_TESTS #GITHUB_TOKEN=[secure] TRAVIS_UTILS_HOME=$HOME/.local SONAR_HOST_URL=https://sonarcloud.io SONAR_TOKEN=[secure] ARTIFACTORY_URL=https://repox.jfrog.io/repox
+  - TARGET=BUILD GITHUB_TOKEN=[secure] TRAVIS_UTILS_HOME=$HOME/.local SONAR_HOST_URL=https://sonarcloud.io SONAR_TOKEN=[secure] ARTIFACTORY_URL=https://repox.jfrog.io/repox
+  - TARGET=WEB_TESTS GITHUB_TOKEN=[secure] TRAVIS_UTILS_HOME=$HOME/.local SONAR_HOST_URL=https://sonarcloud.io SONAR_TOKEN=[secure] ARTIFACTORY_URL=https://repox.jfrog.io/repox
 
 matrix:
   fast_finish: true
