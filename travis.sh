@@ -7,14 +7,10 @@ mvn -version
 # Configure Maven settings and install some script utilities
 #
 configureTravis() {
-  mkdir -p ~/.m2
   mkdir -p ~/.local
   curl -sSL https://github.com/SonarSource/travis-utils/tarball/v55 | tar zx --strip-components 1 -C ~/.local
-
-  echo "hi5643"
   ls -la $HOME
   source ~/.local/bin/install
-  echo "hi 1"
 }
 configureTravis
 
@@ -55,7 +51,7 @@ BUILD)
   ;;
 
 WEB_TESTS)
-  ./gradlew :server:sonar-web:yarn :server:sonar-web:yarn_validate --no-daemon --console plain --warning-mode all
+  ./gradlew :server:sonar-web:yarn :server:sonar-web:yarn_validate --no-daemon --console plain 
   ;;
   
 *)
