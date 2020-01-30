@@ -55,7 +55,7 @@ BUILD)
   ;;
 
 WEB_TESTS)
-  ./gradlew :server:sonar-web:yarn :server:sonar-web:yarn_validate --no-daemon --console plain
+  ./gradlew :server:sonar-web:yarn :server:sonar-web:yarn_validate --no-daemon --console plain --warning-mode all
   ;;
   
 *)
