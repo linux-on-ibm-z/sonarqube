@@ -24,6 +24,7 @@ matrix:
 
 cache:
   directories:
+    - $HOME/.m2
     - $HOME/.sonar
     - $HOME/jvm
     - $HOME/.gradle/caches/
