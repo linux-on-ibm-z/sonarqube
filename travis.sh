@@ -41,7 +41,7 @@ case "$TARGET" in
 
 BUILD)
   git fetch --unshallow
-  ./gradlew build --no-daemon --console plain
+  ./gradlew build --no-daemon --console plain --debug
 
   # the '-' at the end is needed when using set -u (the 'nounset' flag)
   # see https://stackoverflow.com/a/9824943/641955
